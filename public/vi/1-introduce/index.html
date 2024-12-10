@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Giới thiệu :: GIỚI THIỆU VỀ AMAZON EC2</title>
 
     
-    <link href="/css/nucleus.css?1716196893" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1716196893" rel="stylesheet">
-    <link href="/css/hybrid.css?1716196893" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1716196893" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1716196893" rel="stylesheet">
-    <link href="/css/auto-complete.css?1716196893" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1716196893" rel="stylesheet">
-    <link href="/css/theme.css?1716196893" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1716196893" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824969" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824969" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824969" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824969" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824969" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824969" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824969" rel="stylesheet">
+    <link href="/css/theme.css?1733824969" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824969" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1716196893" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824969" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1716196893"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824969"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -86,14 +86,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1716196893"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1716196893"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824969"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824969"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1716196893"></script>
+<script type="text/javascript" src="/js/search.js?1733824969"></script>
 
     
   </div>
@@ -570,7 +570,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>04-03-2024</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -655,14 +655,14 @@
 
 
 	<p>Khi sử dụng tính năng logging trên Amazon S3, bạn có thể ghi lại các hành động do người dùng và dịch vụ thực hiện trên tài nguyên <strong>Amazon S3</strong> của mình. Sau đó, bạn có thể sử dụng bản ghi logging cho mục đích kiểm tra, kiểm soát.</p>
-<p><img src="/images/1.introduce/10.png" alt="S3log"></p>
+<p><img alt="S3log" src="/images/1.introduce/10.png"></p>
 <p>Bạn có thể ghi lại logging của Amazon S3 bằng <strong>Server access logging</strong> hoặc <strong>AWS CloudTrail logs</strong>.</p>
 <p><strong>Server access logging</strong> là một chức năng nằm trong dịch vụ S3 của AWS, cung cấp log chi tiết cho các yêu cầu được gửi tới S3 bucket.</p>
 <p><strong>Server access logging</strong> bị disabled theo mặc định. Log thường được gửi trong vòng vài giờ và rất hiếm khi mất log. Tính năng này không bị tính phí logging cũng như các thao tác PUT lưu log vào bucket. Bạn chỉ bị tính phí cho việc lưu trữ log và các thao tác GET trên file log. Bạn có thể sử dụng <strong>object lifecycle management</strong> để xóa bớt log cũ, giảm thiểu chi phí lưu trữ.</p>
-<p><img src="/images/1.introduce/11.png" alt="S3sal"></p>
+<p><img alt="S3sal" src="/images/1.introduce/11.png"></p>
 <p><strong>AWS CloudTrail</strong> là dịch vụ cung cấp bản ghi các hành động được thực hiện bởi người dùng, vai trò hoặc dịch vụ trong Tài khoản AWS của bạn. Bạn có thể sử dụng <strong>CloudTrail</strong> để kiểm tra tài khoản của mình bằng cách logging và monitor mọi hoạt động, phát hiện nếu như có hoạt động bất thường trong tài khoản của mình.</p>
 <p>Log các hành động của <strong>Amazon S3</strong> bằng <strong>AWS CloudTrail</strong> giúp bảo mật tài khoản của bạn bằng cách cung cấp khả năng kiểm tra và phân tích quyền truy cập.</p>
-<p><img src="/images/1.introduce/12.png" alt="S3ct"></p>
+<p><img alt="S3ct" src="/images/1.introduce/12.png"></p>
 <p><strong>So sánh giữa hai phương án logging</strong></p>
 <table>
 <thead>
@@ -727,7 +727,7 @@
 </table>
 <p>Bên cạnh đó, <strong>Amazon Athena</strong> là dịch vụ query tương tác giúp bạn dễ dàng phân tích dữ liệu trong <strong>Amazon S3</strong> bằng SQL tiêu chuẩn. Bạn không cần quản lý bất kỳ cơ sở hạ tầng nào với Athena và bạn chỉ trả tiền cho các truy vấn bạn chạy.</p>
 <p>Sau khi bật <strong>server access logs</strong> hoặc <strong>AWS CloudTrail</strong> và lưu trữ trong S3 bucket mục tiêu, bạn có thể muốn phân tích hoặc tìm kiếm thông tin từ log. Logs không được <strong>Amazon S3</strong> tự động phân tích và bạn có thể có rất nhiều dữ liệu. Để phân tích tất cả dữ liệu <strong>Amazon S3</strong>, bạn có thể sử dụng <strong>Amazon Athena</strong>.</p>
-<p><img src="/images/1.introduce/13.png" alt="S3athena"></p>
+<p><img alt="S3athena" src="/images/1.introduce/13.png"></p>
 
 
 
@@ -1001,19 +1001,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1716196893"></script>
-    <script src="/js/perfect-scrollbar.min.js?1716196893"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1716196893"></script>
-    <script src="/js/jquery.sticky.js?1716196893"></script>
-    <script src="/js/featherlight.min.js?1716196893"></script>
-    <script src="/js/highlight.pack.js?1716196893"></script>
+    <script src="/js/clipboard.min.js?1733824969"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824969"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824969"></script>
+    <script src="/js/jquery.sticky.js?1733824969"></script>
+    <script src="/js/featherlight.min.js?1733824969"></script>
+    <script src="/js/highlight.pack.js?1733824969"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1716196893"></script>
-    <script src="/js/learn.js?1716196893"></script>
-    <script src="/js/hugo-learn.js?1716196893"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824969"></script>
+    <script src="/js/learn.js?1733824969"></script>
+    <script src="/js/hugo-learn.js?1733824969"></script>
 
-    <link href="/mermaid/mermaid.css?1716196893" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1716196893"></script>
+    <link href="/mermaid/mermaid.css?1733824969" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824969"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

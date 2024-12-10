@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Truy vấn log với AWS Athena :: GIỚI THIỆU VỀ AMAZON EC2</title>
 
     
-    <link href="/css/nucleus.css?1716196893" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1716196893" rel="stylesheet">
-    <link href="/css/hybrid.css?1716196893" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1716196893" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1716196893" rel="stylesheet">
-    <link href="/css/auto-complete.css?1716196893" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1716196893" rel="stylesheet">
-    <link href="/css/theme.css?1716196893" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1716196893" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824969" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824969" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824969" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824969" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824969" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824969" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824969" rel="stylesheet">
+    <link href="/css/theme.css?1733824969" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824969" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1716196893" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824969" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1716196893"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824969"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -86,14 +86,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1716196893"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1716196893"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824969"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824969"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1716196893"></script>
+<script type="text/javascript" src="/js/search.js?1733824969"></script>
 
     
   </div>
@@ -570,7 +570,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>04-03-2024</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -658,40 +658,40 @@
 <ol>
 <li>Truy cập vào <a href="https://console.aws.amazon.com/cloudtrail/">CloudTrail console</a>. Ở bảng điều hướng bên trái, chọn <strong>Event history</strong>. Sau đó chọn <strong>Create Athena table</strong>.</li>
 </ol>
-<p><img src="/images/5.athena/51.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/51.png"></p>
 <ol start="2">
 <li>Tại muc <strong>Storage location</strong>, chọn bucket <strong>aws-cloud-trail-logs-workshop</strong> mà ta đang dùng để lưu trữ CloudTrail log. Sau đó chọn <strong>Create table</strong>.</li>
 </ol>
-<p><img src="/images/5.athena/52.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/52.png"></p>
 <ol start="3">
 <li>Xác nhận Athena table <strong>cloudtrail_logs_aws_cloudtrail_logs_workshop</strong> đã được tạo.</li>
 </ol>
-<p><img src="/images/5.athena/53.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/53.png"></p>
 <ol start="4">
 <li>Tìm và chọn service <strong>Athena</strong>, sau đó chọn <strong>Launch query editor</strong>.</li>
 </ol>
-<p><img src="/images/5.athena/53-1.png" alt="S3">
-<img src="/images/5.athena/53-2.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/53-1.png">
+<img alt="S3" src="/images/5.athena/53-2.png"></p>
 <ol start="5">
 <li>Nếu như đây là lần đầu bạn sử dụng Athena thì ấn <strong>Edit settings</strong>, nếu không thì bạn có thể tiếp tục tại bước số 10.</li>
 </ol>
-<p><img src="/images/5.athena/54.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/54.png"></p>
 <ol start="6">
 <li>Ấn <strong>Browse S3</strong>.</li>
 </ol>
-<p><img src="/images/5.athena/55.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/55.png"></p>
 <ol start="7">
 <li>Chọn 1 bucket để lưu kết quả khi query, ở đây chúng ta sử dụng bucket <strong>logging-workshop-destination</strong>.</li>
 </ol>
-<p><img src="/images/5.athena/56.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/56.png"></p>
 <ol start="8">
 <li>Kiểm tra và ấn <strong>Save</strong>.</li>
 </ol>
-<p><img src="/images/5.athena/57.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/57.png"></p>
 <ol start="9">
 <li>Kiểm tra và ấn <strong>Editor</strong> để quay trở về.</li>
 </ol>
-<p><img src="/images/5.athena/58.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/58.png"></p>
 <ol start="10">
 <li>Copy đoạn code dưới đây vào editor, hãy đảm bảo tên table mà ta đang query giống với tên table ở bảng bên trái. Query này sẽ lọc ra những log hành động <strong>GetObject</strong> có eventsource là <strong>s3.amazonaws.com</strong>. Sau đó ấn <strong>Run</strong>.</li>
 </ol>
@@ -700,16 +700,16 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span>
 </span></span><span style="display:flex;"><span>    eventsource <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;s3.amazonaws.com&#39;</span> <span style="color:#66d9ef">AND</span>
 </span></span><span style="display:flex;"><span>    eventname <span style="color:#66d9ef">in</span> (<span style="color:#e6db74">&#39;GetObject&#39;</span>)
-</span></span></code></pre></div><p><img src="/images/5.athena/59.png" alt="S3"></p>
+</span></span></code></pre></div><p><img alt="S3" src="/images/5.athena/59.png"></p>
 <ol start="11">
 <li>Kiểm tra kết quả query ở ngay bên dưới.</li>
 </ol>
-<p><img src="/images/5.athena/60.png" alt="S3"></p>
+<p><img alt="S3" src="/images/5.athena/60.png"></p>
 <ol start="12">
 <li>Sau khi thành công, hãy chạy đoạn query sau trong editor để xóa table</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>cloudtrail_logs_aws_cloudtrail_logs_workshop<span style="color:#f92672">`</span>
-</span></span></code></pre></div><p><img src="/images/6.clean/61.png" alt="S3"></p>
+</span></span></code></pre></div><p><img alt="S3" src="/images/6.clean/61.png"></p>
 
 
 
@@ -986,19 +986,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1716196893"></script>
-    <script src="/js/perfect-scrollbar.min.js?1716196893"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1716196893"></script>
-    <script src="/js/jquery.sticky.js?1716196893"></script>
-    <script src="/js/featherlight.min.js?1716196893"></script>
-    <script src="/js/highlight.pack.js?1716196893"></script>
+    <script src="/js/clipboard.min.js?1733824969"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824969"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824969"></script>
+    <script src="/js/jquery.sticky.js?1733824969"></script>
+    <script src="/js/featherlight.min.js?1733824969"></script>
+    <script src="/js/highlight.pack.js?1733824969"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1716196893"></script>
-    <script src="/js/learn.js?1716196893"></script>
-    <script src="/js/hugo-learn.js?1716196893"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824969"></script>
+    <script src="/js/learn.js?1733824969"></script>
+    <script src="/js/hugo-learn.js?1733824969"></script>
 
-    <link href="/mermaid/mermaid.css?1716196893" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1716196893"></script>
+    <link href="/mermaid/mermaid.css?1733824969" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824969"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
