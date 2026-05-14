@@ -1,6 +1,6 @@
 ---
 title: "Tạo 2 bucket"
-date: "`r Sys.Date()`"
+date: 2024-01-01
 weight: 1
 chapter: true
 pre: " <b> 2.1 </b> "

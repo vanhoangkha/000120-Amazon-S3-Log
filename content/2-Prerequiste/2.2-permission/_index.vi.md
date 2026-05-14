@@ -1,6 +1,6 @@
 ---
 title: "Cập nhật quyền tạo log"
-date: "`r Sys.Date()`"
+date: 2024-01-01
 weight: 2
 chapter: true
 pre: " <b> 2.2 </b> "

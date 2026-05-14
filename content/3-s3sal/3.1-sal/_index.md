@@ -1,6 +1,6 @@
 ---
 title: "Enable S3 Server access logging"
-date: "`r Sys.Date()`"
+date: 2024-01-01
 weight: 1
 chapter: true
 pre: " <b> 3.1 </b> "

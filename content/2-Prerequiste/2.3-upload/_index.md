@@ -1,6 +1,6 @@
 ---
 title: "Upload file to S3 bucket "
-date: "`r Sys.Date()`"
+date: 2024-01-01
 weight: 3
 chapter: true
 pre: " <b> 2.3 </b> "

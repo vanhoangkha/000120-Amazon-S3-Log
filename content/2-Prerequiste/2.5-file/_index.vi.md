@@ -1,6 +1,6 @@
 ---
 title: "Truy cập file thành công"
-date: "`r Sys.Date()`"
+date: 2024-01-01
 weight: 5
 chapter: true
 pre: " <b> 2.5 </b> "
