@@ -1,4 +1,4 @@
-# 📝 Amazon S3 Logging
+# Amazon S3 Logging
 
 Configure and analyze S3 access logs.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series.
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000120-Amazon-S3-Log/)**
+**[Start the workshop](https://vanhoangkha.github.io/000120-Amazon-S3-Log/)**
 
 ## Prerequisites
 
